@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function hitung() {
+            const dollar = 14650; //konstanta
+            let rupiah = document.getElementById("rupiah").value;
+            console.log("Rupiah : Rp." + rupiah);
+            let hasil_dollar = rupiah / dollar
+            console.log("Dollar : $" + hasil_dollar);
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innerHTML = hasil_dollar;
+        }
+    </script>
+    <title>SOAL 2 AMMAR</title>
+</head>
+
+<body bgcolor="beige">
+    <h3>Menghitung Rupiah Ke Dollar</h3>
+    <table border="solid 1">
+        <thead>
+            <tr>
+                <th>Masukan jumlah rupiah</th>
+                <th>Dalam Dollar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="number" value="" size="10" id="rupiah"></td>
+                <td>$<span id="hasil"></span></td>
+            </tr>
+        </tbody>
+    </table>
+    <button onclick="hitung()">Hitung</button>
+</body>
+
+</html>
